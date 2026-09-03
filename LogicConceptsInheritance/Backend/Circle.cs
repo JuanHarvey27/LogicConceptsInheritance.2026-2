@@ -5,11 +5,13 @@ public class Circle : GeometricFigure
 {
     // Fields 
     private double _r;
+
     // Constructors
     public Circle(string name, double r) : base(name)
     {
         R = r;
     }
+
     // Properties
     public double R 
     { 

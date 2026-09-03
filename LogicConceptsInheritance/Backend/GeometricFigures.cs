@@ -8,6 +8,7 @@ public abstract class GeometricFigure
     {
         Name = name;
     }
+
     // Properties
     public string Name { get; set; } = null!;
 

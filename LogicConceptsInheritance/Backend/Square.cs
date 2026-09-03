@@ -11,12 +11,14 @@ internal class Square : GeometricFigure
     {
         A = a;
     }
+
     // Properties
     public double A
     {
         get => _a;
         set => _a = ValidateA(value);
     }
+
     // Public Methods
     public override double GetArea()
     {
@@ -29,6 +31,7 @@ internal class Square : GeometricFigure
         double Perimeter = 4 * A;
         return Perimeter;
     }
+
     // Private Methods
     private double ValidateA(double A)
     {
