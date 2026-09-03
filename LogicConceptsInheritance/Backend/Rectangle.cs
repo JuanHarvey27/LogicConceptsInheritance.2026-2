@@ -14,8 +14,8 @@ public class Rectangle : Square
     // Properties
     public double B 
     { 
-        get=>_b; 
-        set=>_b=ValidateB(value); 
+        get => _b; 
+        set =>_b = ValidateB(value); 
     }
 
     // Public Methods

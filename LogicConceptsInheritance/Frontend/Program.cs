@@ -1,5 +1,4 @@
-﻿using GeometricFigures.Backend;
-using System.Drawing;
+﻿using GeometricFigure.Backend;
 
 var circle = new Circle(name: nameof(Circle), r: 5);
 var square = new Square(name: nameof(Square), a: 10);
@@ -12,12 +11,10 @@ var trapeze = new Trapeze(name: nameof(Trapeze), a: 10, b: 20, c: 30, d: 40, h: 
 
 var figures = new List<GeometricFigure>
 {
-    circle, square, rhombus, kite, rectangle, parallelogram, triangle, trapeze
+circle, square, rhombus, kite, rectangle, parallelogram, triangle, trapeze
 };
 
 foreach (var figure in figures)
 {
     Console.WriteLine(figure);
 }
-
-
