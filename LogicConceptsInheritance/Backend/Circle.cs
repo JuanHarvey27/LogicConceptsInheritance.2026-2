@@ -32,12 +32,12 @@ public class Circle : GeometricFigure
 
     // Private Methods
 
-    private double ValidateR(double r)
+    private double ValidateR(double R)
     {
-        if (r <= 0)
+        if (R <= 0)
         {
             throw new ArgumentException("Radius must be greater than zero.");
         }
-        return r;
+        return R;
     }
 }
