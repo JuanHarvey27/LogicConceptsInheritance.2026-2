@@ -35,7 +35,7 @@
       <FileName>Kite.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Backend.Rectangle">
+  <Class Name="GeometricFigures.Backend.Rectangle">
     <Position X="2.75" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAIAAAAAAAAAEAAAAAEAEAAAA=</HashCode>

@@ -1,11 +1,11 @@
-﻿namespace Backend;
+﻿namespace GeometricFigures.Backend;
 public class Parallelogram : Rectangle
 {
     // Fields 
     private double _h;
     public Parallelogram(string name, double a, double b, double h) : base(name, a, b)
     {
-        H = _h;
+        H = h;
     }
 
     // Properties
@@ -35,7 +35,7 @@ public class Parallelogram : Rectangle
     {
         if (H <= 0)
         {
-            throw new ArgumentException("Height must be greater than zero.");
+            throw new Exception("Height must be greater than zero.");
         }
         return H;
     }

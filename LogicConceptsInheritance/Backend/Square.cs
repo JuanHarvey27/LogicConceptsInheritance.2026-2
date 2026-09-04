@@ -1,6 +1,4 @@
-﻿using System;
-namespace Backend;
-
+﻿namespace GeometricFigures.Backend;
 public class Square : GeometricFigure
 {
     // Fields
@@ -37,7 +35,7 @@ public class Square : GeometricFigure
     {
         if (A <= 0)
         {
-            throw new ArgumentException("Side length must be greater than zero.");
+            throw new Exception("Side length must be greater than zero.");
         }
         return A;
     }

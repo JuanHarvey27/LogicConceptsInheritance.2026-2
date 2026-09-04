@@ -1,4 +1,4 @@
-﻿using GeometricFigure.Backend;
+﻿using GeometricFigures.Backend;
 
 var circle = new Circle(name: nameof(Circle), r: 5);
 var square = new Square(name: nameof(Square), a: 10);

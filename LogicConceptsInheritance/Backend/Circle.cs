@@ -1,6 +1,4 @@
-﻿using System;
-namespace Backend;
-
+﻿namespace GeometricFigures.Backend;
 public class Circle : GeometricFigure
 {
     // Fields 
@@ -38,7 +36,7 @@ public class Circle : GeometricFigure
     {
         if (R <= 0)
         {
-            throw new ArgumentException("Radius must be greater than zero.");
+            throw new Exception("Radius must be greater than zero.");
         }
         return R;
     }

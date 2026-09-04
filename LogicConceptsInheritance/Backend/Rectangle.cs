@@ -1,5 +1,4 @@
-﻿namespace Backend;
-
+﻿namespace GeometricFigures.Backend;
 public class Rectangle : Square
 {
     // Fields
@@ -8,14 +7,14 @@ public class Rectangle : Square
     // Constructors
     public Rectangle(string name, double a, double b) : base(name, a)
     {
-        B = _b;
+        B = b;
     }
 
     // Properties
     public double B 
     { 
         get => _b; 
-        set =>_b = ValidateB(value); 
+        set => _b = ValidateB(value); 
     }
 
     // Public Methods
@@ -36,7 +35,7 @@ public class Rectangle : Square
     {
         if (B <= 0)
         {
-            throw new ArgumentException("Side length must be greater than zero.");
+            throw new Exception("Side length must be greater than zero.");
         }
         return B;
     }

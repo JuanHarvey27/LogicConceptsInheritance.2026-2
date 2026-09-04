@@ -1,5 +1,4 @@
-﻿namespace Backend;
-
+﻿namespace GeometricFigures.Backend;
 public class Rhombus : Square
 {
     // Fields
@@ -39,7 +38,7 @@ public class Rhombus : Square
     {
         if (D1 <= 0)
         {
-            throw new ArgumentException("Diagonal 1 must be greater than zero.");
+            throw new Exception("Diagonal 1 must be greater than zero.");
         }
         return D1;
     }
@@ -47,7 +46,7 @@ public class Rhombus : Square
     {
         if (D2 <= 0)
         {
-            throw new ArgumentException("Diagonal 2 must be greater than zero.");
+            throw new Exception("Diagonal 2 must be greater than zero.");
         }
         return D2;
     }

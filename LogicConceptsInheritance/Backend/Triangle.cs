@@ -1,5 +1,4 @@
-﻿namespace Backend;
-
+﻿namespace GeometricFigures.Backend;
 public class Triangle: Rectangle
 {
     // Fields     
@@ -9,8 +8,8 @@ public class Triangle: Rectangle
     // Constructors
     public Triangle(string name, double a, double b, double c, double h) : base(name, a, b)
     {
-        C = _c;
-        H = _h;
+        C = c;
+        H = h;
     }
 
     // Properties
@@ -45,7 +44,7 @@ public class Triangle: Rectangle
     {
         if (C <= 0)
         {
-            throw new ArgumentException("Side length must be greater than zero.");
+            throw new Exception("Side length must be greater than zero.");
         }
         return C;
     }
@@ -53,7 +52,7 @@ public class Triangle: Rectangle
     {
         if (H <= 0)
         {
-            throw new ArgumentException("Height must be greater than zero.");
+            throw new Exception("Height must be greater than zero.");
         }
         return H;
     }

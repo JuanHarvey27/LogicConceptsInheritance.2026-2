@@ -1,5 +1,4 @@
-﻿namespace Backend;
-
+﻿namespace GeometricFigures.Backend;
 public class Kite : Rhombus
 {
     // Fields
@@ -35,7 +34,7 @@ public class Kite : Rhombus
     {
         if (B <= 0)
         {
-            throw new ArgumentException("Side length must be greater than zero.");
+            throw new Exception("Side length must be greater than zero.");
         }
         return B;
     }

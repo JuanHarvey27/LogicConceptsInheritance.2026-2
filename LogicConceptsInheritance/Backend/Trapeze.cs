@@ -1,4 +1,4 @@
-﻿namespace Backend;
+﻿namespace GeometricFigures.Backend;
 public class Trapeze : Triangle
 {
     // Fields 
@@ -6,9 +6,10 @@ public class Trapeze : Triangle
 
     // Constructors
 
-    public Trapeze(string name, double a, double b, double c, double d, double h) : base(name, a, b, c, h)
+    public Trapeze(string name,  double a, double b, double c, double d, double h) : 
+        base(name, a, b, c, h)
     {
-        D = _d;
+        D = d;
     }
 
     // Properties
@@ -37,7 +38,7 @@ public class Trapeze : Triangle
     {
         if (D <= 0)
         {
-            throw new ArgumentException("Side length must be greater than zero.");
+            throw new Exception("Side length must be greater than zero.");
         }
         return D;
     }
